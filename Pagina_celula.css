@@ -23,7 +23,7 @@
 
 .grid-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 16px;
     margin-top: 20px;
 }
@@ -61,12 +61,14 @@
 
 .step-item {
     display: flex;
+    align-items: flex-start;
     gap: 15px;
     background: var(--cor-painel-suave);
     border: 1px solid var(--cor-borda);
     border-radius: 10px;
     padding: 16px;
     margin-bottom: 12px;
+    min-width: 0;
 }
 
 .step-number {
@@ -85,6 +87,12 @@
 .step-content h4 {
     color: var(--cor-texto);
     margin-bottom: 6px;
+    overflow-wrap: anywhere;
+}
+
+.step-content {
+    flex: 1;
+    min-width: 0;
 }
 
 .step-content p {
@@ -103,4 +111,20 @@
 .highlight-box p {
     color: var(--cor-texto);
     margin: 0;
+}
+
+@media (max-width: 480px) {
+    .content-section {
+        padding: 20px 16px;
+    }
+
+    .step-item {
+        gap: 10px;
+        padding: 14px 12px;
+    }
+
+    .step-number {
+        width: 28px;
+        height: 28px;
+    }
 }
