@@ -1,0 +1,130 @@
+
+.maquete-3d-box {
+    background: #fffdf9;
+    border: 1px solid #d9d0c0;
+    border-radius: 12px;
+    padding: 22px 18px;
+    margin-bottom: 24px;
+}
+
+.maquete-header {
+    margin-bottom: 16px;
+}
+
+.maquete-header h3 {
+    color: var(--text);
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+}
+
+.maquete-header p {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.viewer-wrapper {
+    width: 100%;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #d9d0c0;
+    background: #f7f3ee;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+    --poster-color: transparent;
+}
+
+.galeria-section {
+    margin-bottom: 24px;
+}
+
+.galeria-section h3 {
+    color: var(--text);
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.section-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+}
+
+.galeria-grid {
+    margin-bottom: 0;
+}
+
+.foto-card {
+    background: var(--panel-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.foto-art {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.foto-art--overview {
+    background: linear-gradient(135deg, #386d5d, #1d4e3d);
+}
+
+.foto-art--granulos {
+    background: linear-gradient(135deg, #4d6d8a, #2c425d);
+}
+
+.foto-art--sinapse {
+    background: linear-gradient(135deg, #d38b5a, #7d4a66);
+}
+
+.foto-info {
+    padding: 14px 14px 16px;
+}
+
+.foto-info h4 {
+    color: var(--green-dark);
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.foto-info p {
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.materiais-lista {
+    list-style: none;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.materiais-lista li {
+    color: var(--muted);
+    position: relative;
+    padding-left: 18px;
+}
+
+.materiais-lista li::before {
+    content: "•";
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.materiais-lista li strong {
+    color: var(--text);
+}

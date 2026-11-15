@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellTKiller | A Maquete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Pagina_inicial.css">
+    <link rel="stylesheet" href="Pagina_Maquete.css">
+
+    <!-- Script para carregar e controlar o modelo 3D -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <h1 class="logo">CellTKiller</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Pagina_inicial.html">Início</a></li>
+                <li><a href="Pagina_Celula.html">A Célula</a></li>
+                <li><a href="Pagina_Maquete.html" class="active">A Maquete</a></li>
+                <li><a href="Pagina_Equipe.html">Nosso Grupo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        
+        <!-- HERO SECTION DA MAQUETE -->
+        <section class="hero">
+            <span class="badge">Representação Tridimensional</span>
+            <h2>A Maquete do Linfócito T</h2>
+            <p>
+                Visualização detalhada da estrutura da nossa célula de defesa e da sua interação no combate às ameaças tumorais.
+            </p>
+        </section>
+
+        <!-- VISUALIZADOR 3D INTERATIVO -->
+        <section class="maquete-3d-box">
+            <div class="maquete-header">
+                <h3>📦 Modelo 3D Interativo</h3>
+                <p>Clique, arraste para girar em 360° e use o scroll do mouse para dar zoom na estrutura.</p>
+            </div>
+            
+            <div class="viewer-wrapper">
+                <model-viewer 
+                    src="modelo_maquete.glb" 
+                    alt="Modelo 3D interativo da maquete do Linfócito T" 
+                    camera-controls 
+                    auto-rotate 
+                    shadow-intensity="1" 
+                    ar>
+                </model-viewer>
+            </div>
+        </section>
+
+        <!-- GALERIA DE FOTOS DA MAQUETE FISICA -->
+        <section class="galeria-section">
+            <h3>📷 Fotos do Projeto Físico</h3>
+            <p class="section-desc">Registros dos detalhes e etapas de montagem da maquete física.</p>
+
+            <div class="galeria-grid row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="foto-card h-100">
+                        <div class="foto-art foto-art--overview">
+                            <span>Visão Geral</span>
+                        </div>
+                        <div class="foto-info">
+                            <h4>Visão Geral</h4>
+                            <p>Estrutura completa mostrando a célula T e suas organelas internas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="foto-card h-100">
+                        <div class="foto-art foto-art--granulos">
+                            <span>Organelas</span>
+                        </div>
+                        <div class="foto-info">
+                            <h4>Organelas &amp; Grânulos</h4>
+                            <p>Destaque para o Complexo de Golgi, RER e os grânulos citotóxicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="foto-card h-100">
+                        <div class="foto-art foto-art--sinapse">
+                            <span>Sinapse</span>
+                        </div>
+                        <div class="foto-info">
+                            <h4>Sinapse Imunológica</h4>
+                            <p>Representação do acoplamento dos receptores TCR e CD8 na membrana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATERIAIS UTILIZADOS -->
+        <section class="intro-box">
+            <div class="intro-content">
+                <h3>🛠️ Materiais utilizados</h3>
+                <p>
+                    Usamos materiais simples e recicláveis para montar a maquete do linfócito T:
+                </p>
+                <ul class="materiais-lista">
+                    <li><strong>Corpo da célula:</strong> bola de isopor.</li>
+                    <li><strong>Membrana externa:</strong> sacolas plásticas azuis.</li>
+                    <li><strong>Núcleo:</strong> bola de jornal amassado.</li>
+                    <li><strong>Mitocôndrias:</strong> tampinhas ou pedaços de caixa de ovos.</li>
+                    <li><strong>Retículo endoplasmático:</strong> tiras de papelão ondulado.</li>
+                    <li><strong>Complexo de Golgi:</strong> tiras de papelão curvadas.</li>
+                    <li><strong>Grânulos citotóxicos:</strong> tampinhas pequenas ou bolinhas de papel.</li>
+                    <li><strong>Receptores de superfície:</strong> canudos ou pedaços de papel enrolados.</li>
+                    <li><strong>Célula-alvo:</strong> jornal amassado coberto com papel vermelho.</li>
+                    <li><strong>Base:</strong> caixa de papelão.</li>
+                    <li><strong>Materiais complementares:</strong> cola, fita adesiva, tesoura e tinta ou papel colorido.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>CellTKiller — 1º Informática 2026 | Dúvidas? Fale com o especialista: (11) 96474-9352</p>
+    </footer>
+
+</body>
+</html>
