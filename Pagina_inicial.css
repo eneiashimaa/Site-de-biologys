@@ -15,13 +15,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 body {
   background: var(--cor-fundo);
   color: var(--cor-texto);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -282,5 +282,47 @@ img {
   .container {
     padding-left: 12px;
     padding-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.94rem;
+  }
+
+  .hero {
+    padding: 24px 16px 20px;
+    margin: 14px 0 18px;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+  .intro-box,
+  .content-section,
+  .quiz-container {
+    padding: 18px 15px;
+    margin-bottom: 16px;
+  }
+
+  .content-section h2,
+  .content-section h3,
+  .intro-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .grid-cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .card {
+    padding: 15px 14px;
+  }
+
+  .btn {
+    padding: 9px 13px;
+    font-size: 0.9rem;
   }
 }
