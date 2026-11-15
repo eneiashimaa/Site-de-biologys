@@ -7,7 +7,7 @@
 }
 
 .section-heading h3 {
-    color: var(--text);
+    color: var(--cor-texto);
     font-size: 1.25rem;
     margin: 0;
 }
@@ -19,8 +19,8 @@
 }
 
 .membro-card {
-    background: var(--panel-soft);
-    border: 1px solid var(--border);
+    background: var(--cor-painel-suave);
+    border: 1px solid var(--cor-borda);
     border-radius: 10px;
     padding: 22px 18px;
     text-align: center;
@@ -30,8 +30,8 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: var(--green-soft);
-    color: var(--green-dark);
+    background: var(--cor-verde-suave);
+    color: var(--cor-verde-escuro);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,14 +41,14 @@
 }
 
 .membro-card h3 {
-    color: var(--text);
+    color: var(--cor-texto);
     font-size: 1.08rem;
     margin-bottom: 6px;
 }
 
 .membro-cargo {
     display: inline-block;
-    color: var(--green-dark);
+    color: var(--cor-verde-escuro);
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -66,19 +66,19 @@
     min-height: 220px;
     margin-bottom: 18px;
     padding: 24px;
-    background: var(--panel-soft);
-    border: 1px dashed var(--border);
+    background: var(--cor-painel-suave);
+    border: 1px dashed var(--cor-borda);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--muted);
+    color: var(--cor-texto-suave);
 }
 
 .equipe-foto-placeholder span {
-    color: var(--text);
+    color: var(--cor-texto);
     font-weight: 700;
     margin-bottom: 4px;
 }
@@ -96,8 +96,8 @@
 }
 
 .equipe-nomes li {
-    background: var(--green-soft);
-    color: var(--green-dark);
+    background: var(--cor-verde-suave);
+    color: var(--cor-verde-escuro);
     border-radius: 6px;
     padding: 8px 12px;
     font-weight: 600;

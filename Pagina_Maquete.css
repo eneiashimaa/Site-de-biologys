@@ -12,13 +12,13 @@
 }
 
 .maquete-header h3 {
-    color: var(--text);
+    color: var(--cor-texto);
     font-size: 1.35rem;
     margin-bottom: 4px;
 }
 
 .maquete-header p {
-    color: var(--muted);
+    color: var(--cor-texto-suave);
     font-size: 0.92rem;
 }
 
@@ -42,13 +42,13 @@ model-viewer {
 }
 
 .galeria-section h3 {
-    color: var(--text);
+    color: var(--cor-texto);
     font-size: 1.35rem;
     margin-bottom: 6px;
 }
 
 .section-desc {
-    color: var(--muted);
+    color: var(--cor-texto-suave);
     font-size: 0.92rem;
     margin-bottom: 18px;
 }
@@ -58,8 +58,8 @@ model-viewer {
 }
 
 .foto-card {
-    background: var(--panel-soft);
-    border: 1px solid var(--border);
+    background: var(--cor-painel-suave);
+    border: 1px solid var(--cor-borda);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -92,13 +92,13 @@ model-viewer {
 }
 
 .foto-info h4 {
-    color: var(--green-dark);
+    color: var(--cor-verde-escuro);
     font-size: 1rem;
     margin-bottom: 6px;
 }
 
 .foto-info p {
-    color: var(--muted);
+    color: var(--cor-texto-suave);
     font-size: 0.85rem;
     line-height: 1.5;
 }
@@ -112,19 +112,19 @@ model-viewer {
 }
 
 .materiais-lista li {
-    color: var(--muted);
+    color: var(--cor-texto-suave);
     position: relative;
     padding-left: 18px;
 }
 
 .materiais-lista li::before {
     content: "•";
-    color: var(--green);
+    color: var(--cor-verde);
     position: absolute;
     left: 0;
     top: -1px;
 }
 
 .materiais-lista li strong {
-    color: var(--text);
+    color: var(--cor-texto);
 }
