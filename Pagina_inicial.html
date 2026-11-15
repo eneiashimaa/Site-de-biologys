@@ -93,7 +93,7 @@
                     Confira uma animação tridimensional detalhando o momento exato em que a célula T citotóxica acopla-se e destrói uma célula tumoral.
                 </p>
                 <a href="https://www.youtube.com/watch?v=jgJKaP0Sj5U" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 28px; text-decoration: none; display: inline-block;">
-                    ▶ Assistir ao Vídeo no YouTube
+                    Assistir ao Vídeo no YouTube
                 </a>
             </div>
         </section>
@@ -168,7 +168,7 @@
             const btn = document.getElementById("quiz-btn");
             if (quizContainer.style.display === "none") {
                 quizContainer.style.display = "block";
-                btn.textContent = "Ocultar Quiz ✖";
+                btn.textContent = "Ocultar Quiz";
                 loadQuestion();
                 quizContainer.scrollIntoView({ behavior: 'smooth' });
             } else {
@@ -207,13 +207,13 @@
             if (selectedIndex === q.answer) {
                 selectedButton.style.backgroundColor = "#2e8b57";
                 selectedButton.style.borderColor = "#2ec971";
-                feedback.textContent = "🎉 Resposta Correta!";
+                feedback.textContent = "Resposta correta!";
                 feedback.style.color = "#2ec971";
                 score++;
             } else {
                 selectedButton.style.backgroundColor = "#8b2e2e";
                 selectedButton.style.borderColor = "#c92e2e";
-                feedback.textContent = `❌ Incorreto. A resposta certa era: "${q.options[q.answer]}"`;
+                feedback.textContent = `Incorreto. A resposta certa era: "${q.options[q.answer]}"`;
                 feedback.style.color = "#ff6b6b";
                 allButtons[q.answer].style.backgroundColor = "#2e8b57";
             }
@@ -222,7 +222,7 @@
             if (currentQuestionIndex < questions.length - 1) {
                 nextBtn.textContent = "Próxima Pergunta ➔";
             } else {
-                nextBtn.textContent = "Ver Resultado Final 🏆";
+                nextBtn.textContent = "Ver Resultado Final";
             }
             nextBtn.style.display = "block";
         }
@@ -241,10 +241,10 @@
             let performanceMessage = score === 10 ? "Perfeito! Você dominou totalmente o assunto!" : (score >= 7 ? "Muito bom! Você aprendeu bastante sobre o projeto." : "Bom esforço! Que tal dar uma relida nas páginas para aprender mais?");
             quizBox.innerHTML = `
                 <div style="text-align: center; padding: 20px;">
-                    <h3 style="color: #214f3d; font-size: 1.8rem; margin-bottom: 15px;">Fim do Quiz! 🏆</h3>
+                    <h3 style="color: #214f3d; font-size: 1.8rem; margin-bottom: 15px;">Fim do Quiz!</h3>
                     <p style="font-size: 1.2rem; color: #1d2a24; margin-bottom: 10px;">Você acertou <strong>${score}</strong> de <strong>${questions.length}</strong> perguntas.</p>
                     <p style="color: #5f6d67; margin-bottom: 25px;">${performanceMessage}</p>
-                    <button class="btn btn-primary" onclick="restartQuiz()">Refazer o Quiz 🔄</button>
+                    <button class="btn btn-primary" onclick="restartQuiz()">Refazer o Quiz</button>
                 </div>
             `;
         }
