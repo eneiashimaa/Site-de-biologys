@@ -63,17 +63,19 @@
 }
 
 .equipe-foto-placeholder {
-    height: 220px;
+    width: 100%;
+    height: clamp(280px, 38vw, 460px);
     margin-bottom: 18px;
     overflow: hidden;
     background: var(--cor-painel-suave);
-    border: 1px dashed var(--cor-borda);
+    border: 0;
     border-radius: 10px;
 }
 
 .equipe-foto-placeholder img {
     width: 100%;
     height: 100%;
+    max-width: none;
     display: block;
     object-fit: cover;
     object-position: center;
