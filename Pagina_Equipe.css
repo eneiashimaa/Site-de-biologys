@@ -65,7 +65,7 @@
 .equipe-foto-placeholder {
     min-height: 220px;
     margin-bottom: 18px;
-    padding: 24px;
+    
     background: var(--cor-painel-suave);
     border: 1px dashed var(--cor-borda);
     border-radius: 10px;
