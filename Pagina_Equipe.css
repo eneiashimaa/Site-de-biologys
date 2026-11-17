@@ -63,13 +63,13 @@
 }
 
 .equipe-foto-placeholder {
-    width: 100%;
-    height: clamp(280px, 38vw, 460px);
-    margin-bottom: 18px;
+    width: calc(100% + 40px);
+    height: clamp(320px, 42vw, 500px);
+    margin: 0 -20px 18px;
     overflow: hidden;
     background: var(--cor-painel-suave);
     border: 0;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 .equipe-foto-placeholder img {
