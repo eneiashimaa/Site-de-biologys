@@ -68,7 +68,7 @@
     margin: 0 -20px 18px;
     overflow: hidden;
     background: var(--cor-painel-suave);
-    border: 0;
+    border: 01px solid var(--cor-borda);
     border-radius: 0;
 }
 
